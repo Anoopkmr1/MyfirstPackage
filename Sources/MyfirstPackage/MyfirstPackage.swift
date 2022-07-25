@@ -7,22 +7,16 @@ public enum NetworkError: Error {
 
 public class Webservice {
     
-    public init() { }
     
-    public func fetch<T: Codable>(url: URL, parse: @escaping (Data) -> T?, completion: @escaping (Result<T?, NetworkError>) -> Void)  {
-        
-        URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil,
-                  (response as? HTTPURLResponse)?.statusCode == 200
-            else {
-                completion(.failure(.decodingError))
-                return
-            }
-            let result = parse(data)
-            completion(.success(result))
-            
-        }.resume()
-        
-    }
+    
+
+        var text: String
+        var response: String?
+        init(text: String) {
+            self.text = text
+        }
+        func ask() {
+            print(text)
+        }
     
 }
