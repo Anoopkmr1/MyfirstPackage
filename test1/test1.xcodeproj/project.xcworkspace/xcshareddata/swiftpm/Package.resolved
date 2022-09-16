@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "w3w-swift-components",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/what3words/w3w-swift-components",
+      "state" : {
+        "branch" : "master",
+        "revision" : "19e6c4258f28893d1e636aa3165c2d860fbbd01e"
+      }
+    },
+    {
+      "identity" : "w3w-swift-wrapper",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/what3words/w3w-swift-wrapper.git",
+      "state" : {
+        "revision" : "6f0199f942fe4a43a1d92d0dc3d5afc82241624a",
+        "version" : "3.8.0"
+      }
+    }
+  ],
+  "version" : 2
+}
